@@ -1,0 +1,39 @@
+.StatisticsList {
+  padding: 0 10px;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+
+  @media screen and (min-width: 480px) {
+    padding: 0 20px;
+  }
+
+  .StatisticsItem {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    @media screen and (min-width: 480px) {
+      font-size: 18px;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 1170px) {
+      font-size: 22px;
+    }
+  }
+
+  .StatisticsItem:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .StatisticsItem:nth-last-child(-n + 2) {
+    color: #30d5c8;
+    font-weight: 700;
+  }
+}
